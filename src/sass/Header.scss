@@ -1,0 +1,13 @@
+@import "variables.scss";
+
+.MuiAppBar-root {
+    background-color: $color-white!important;
+    color: $color-primary-green!important;
+    flex-direction: column!important;
+    justify-content: center;
+    height: 5vh;
+}
+
+.MuiTypography-h5 {
+    font-weight: 500!important;
+}
