@@ -1,15 +1,17 @@
 import React from 'react';
 import '../sass/App.scss';
-import Header from '../components/Header.js';
-import Footer from '../components/Footer.js';
+import '../sass/Home.scss';
+
+import Container from '@material-ui/core/Container';
+
+import Search from '../components/Search.js';
 
 function Home() {
   return (
-    <div>
-      <Header />
+    <Container>
+      <Search />
       home
-      <Footer />
-    </div>
+    </Container>
   );
 }
 

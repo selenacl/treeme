@@ -1,0 +1,13 @@
+@import "variables.scss";
+
+.MuiOutlinedInput-root {
+    width: 40rem;
+}
+
+.MuiTextField-root {
+    margin-top: 5rem!important;
+}
+
+.MuiOutlinedInput-notchedOutline {
+    border: 2px solid $color-primary-green!important;
+}
