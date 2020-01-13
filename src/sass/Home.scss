@@ -2,5 +2,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100%;
+    width: 80%!important;
+}
+
+.MuiGrid-root {
+    margin-top: 1rem!important;
 }
