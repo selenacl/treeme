@@ -4,31 +4,34 @@ import '../sass/HomeCard.scss';
 
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import Chip from '@material-ui/core/Chip';
 
 
-function HomeCard() {
+function HomeCard(props) {
+  const chips = props.tags.map((tag, index) => {
+    return <Chip size="small" label={tag} key={index} />
+  });
+
   return (
+    
     <Card>
       <CardActionArea>
         <CardMedia
-          image={require ("../assets/tree.jpg")}
-          title="Yellow Birch"
+          image={require ("../assets/" + props.filename)}
+          title={props.name}
         />
         <CardContent>
           <Typography variant="h5" id="homeCard-h5">
-            Yellow Birch
+            {props.name}
           </Typography>
           <Typography variant="subtitle1">
-            Betula alleghaniensis
+            {props.scientificName}
           </Typography>
           <br />
-          <Chip size="small" label="yellow" />
-          <Chip size="small" label="birch" />
+          {chips}
         </CardContent>
       </CardActionArea>
     </Card>
