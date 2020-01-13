@@ -1,0 +1,37 @@
+@import "variables.scss";
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    list-style: none;
+    background-color: $color-primary-green;
+    border-radius: 3px;
+    margin-top: 3rem;
+    font-size: 1rem;
+
+    & li:not(:last-child) {
+        border-right: 1px solid $color-white;
+    }
+
+    & a {
+        display: block;
+        width: 1rem!important;
+        flex: 1!important;
+        height: 2rem;
+        width: 2rem!important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        text-decoration: none;
+        color: $color-white!important;
+    }
+
+    & a:hover {
+        background-color: $color-primary-green-light;
+        border-radius: 3px;
+    }
+}

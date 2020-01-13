@@ -8,11 +8,14 @@ import Grid from '@material-ui/core/Grid';
 
 import Search from '../components/Search.js';
 import HomeCard from '../components/HomeCard.js';
+import Pagination from '../components/Pagination.js';
 import treeData from '../assets/TreeData.js';
 
 function Home() {
 
   const [treeInfo] = useState(treeData);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [cardsPerPage, setCardsPerPage] = useState(8);
 
   const cards = treeInfo.map((tree, index) => {
     return <Grid item xs={12} md={6} lg={3}>
@@ -25,6 +28,14 @@ function Home() {
           </Grid>
   });
 
+  // Get current cards
+  const indexOfLastCard = currentPage * cardsPerPage;
+  const indexOfFirstCard = indexOfLastCard - cardsPerPage;
+  const currentCards = cards.slice(indexOfFirstCard, indexOfLastCard);
+
+  // Change page
+  const paginate = pageNumber => setCurrentPage(pageNumber);
+
   return (
     <Container maxWidth={false}>
       <Search />
@@ -32,11 +43,16 @@ function Home() {
         container 
         spacing={6} 
         direction="row"
-        justify="center"
+        justify="start"
         alignItems="center"
       >
-        {cards}
+        {currentCards}
       </Grid>
+      <Pagination 
+        cardsPerPage={cardsPerPage} 
+        totalCards={cards.length} 
+        paginate={paginate}
+      />
     </Container>
   );
 }

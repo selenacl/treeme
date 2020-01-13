@@ -248,36 +248,36 @@ export default [
             }
         ]
     },
-    // {
-    //     name: "Red Maple",
-    //     scientificName: "Acer rubrum",
-    //     locations: ["Eastern North America", "Central North America"],
-    //     aliases: "",
-    //     height: "",
-    //     width: "",
-    //     tags: ["north america"],
-    //     description: `One of the most common and widespread deciduous trees of eastern and central North
-    //     America. The U.S. Forest service recognizes it as the most abundant native tree in eastern North
-    //     America. At maturity, it often attains a height of around 30m. It’s flowers, petioles, twigs, and seeds
-    //     are all red to varying degrees. Among these features, however, it is best known for its brilliant deep
-    //     scarlet foliage in autumn.`,
-    //     citations: ["https://en.wikipedia.org/wiki/Acer_rubrum"],
-    //     images: [
-    //         {
-    //             filename: "redMaple-1.jpg",
-    //             source: "https://www.chesapeakebay.net/discover/field-guide/entry/red_maple",
-    //             photographer: null
-    //         },
-    //         {
-    //             filename: "redMaple-2.jpg",
-    //             source: "https://www.123rf.com/photo_116854407_red-maple-leaf-on-maple-tree-colorful-season-autumn-in-the-forest-leaves-color-change-scenery-view-n.html",
-    //             photographer: null
-    //         },
-    //         {
-    //             filename: "redMaple-3.jpg",
-    //             source: "https://www.kb.jniplants.com/what-is-red-maple-anyway/",
-    //             photographer: null
-    //         }
-    //     ]
-    // }
+    {
+        name: "Red Maple",
+        scientificName: "Acer rubrum",
+        locations: ["Eastern North America", "Central North America"],
+        aliases: "",
+        height: "",
+        width: "",
+        tags: ["north america"],
+        description: `One of the most common and widespread deciduous trees of eastern and central North
+        America. The U.S. Forest service recognizes it as the most abundant native tree in eastern North
+        America. At maturity, it often attains a height of around 30m. It’s flowers, petioles, twigs, and seeds
+        are all red to varying degrees. Among these features, however, it is best known for its brilliant deep
+        scarlet foliage in autumn.`,
+        citations: ["https://en.wikipedia.org/wiki/Acer_rubrum"],
+        images: [
+            {
+                filename: "redMaple-1.jpg",
+                source: "https://www.chesapeakebay.net/discover/field-guide/entry/red_maple",
+                photographer: null
+            },
+            {
+                filename: "redMaple-2.jpg",
+                source: "https://www.123rf.com/photo_116854407_red-maple-leaf-on-maple-tree-colorful-season-autumn-in-the-forest-leaves-color-change-scenery-view-n.html",
+                photographer: null
+            },
+            {
+                filename: "redMaple-3.jpg",
+                source: "https://www.kb.jniplants.com/what-is-red-maple-anyway/",
+                photographer: null
+            }
+        ]
+    }
 ]

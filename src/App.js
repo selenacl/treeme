@@ -7,8 +7,10 @@ import Footer from './components/Footer.js';
 function App() {
   return (
     <div className="app">
-      <Header />
-      <Home />
+      <div>
+        <Header />
+        <Home />
+      </div>
       <Footer />
     </div>
   );
