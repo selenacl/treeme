@@ -1,0 +1,11 @@
+@import "variables.scss";
+
+.footerAppBar {
+    flex-direction: row!important;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.MuiSvgIcon-root {
+    color: $color-primary-green;
+}

@@ -14,7 +14,7 @@ function Home() {
       <Search />
       <Grid 
         container 
-        spacing={1} 
+        spacing={6} 
         direction="row"
         justify="center"
         alignItems="center">
