@@ -1,0 +1,52 @@
+.treeContainer {
+    align-items: flex-start;
+    margin: 4rem 0;
+    height: calc(100vh-12vh)!important;
+}
+
+.MuiTypography-h1 {
+    font-size: 4.5rem!important;
+}
+
+.treePhotos {
+    display: flex;
+    flex: 1;
+
+    &__leftimg {
+        height: 30rem;
+        width: 30rem;
+        object-fit: cover;
+        padding-right: 20px;
+    }
+
+    &__rightbox {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__rightimg {
+        height: calc(15rem - 10px);
+        width: 15rem;
+        object-fit: cover;
+    }
+
+    &__rightimg:not(:last-child) {
+        padding-bottom: 20px;
+    }
+}
+
+.treeDetails {
+    flex: 1;
+    height: 30rem;
+    padding-top: 0!important;
+    padding-bottom: 0!important;
+
+    &__paper {
+        height: 100%;
+    }
+
+    &__title {
+        font-weight: 300!important;
+        font-size: 1.8rem!important;
+    }
+}

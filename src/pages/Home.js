@@ -22,7 +22,15 @@ function Home() {
     treeInfo.map((tree, index) => {
       const path = tree.name.toLowerCase().split(' ').join('');
       return <Grid item xs={12} md={6} lg={3}>
-                <Link to={"/tree/" + path} style={{ textDecoration: 'none' }}>
+                <Link 
+                  to={{
+                    pathname: `/tree/${path}`,
+                    state: {
+                      details: tree
+                    }
+                  }}
+                  style={{ textDecoration: 'none' }}
+                >
                   <HomeCard 
                     name={tree.name}
                     scientificName={tree.scientificName}
@@ -59,8 +67,9 @@ function Home() {
     }
 
     let results = [];
-    cards.forEach((card) => {
-      if(card.props.children.props.name.toLowerCase().includes(searchInput)) {
+    allCards.forEach((card) => {
+      console.log(card)
+      if(card.props.children.props.children.props.name.toLowerCase().includes(searchInput)) {
         results.push(card);
         console.log(card)
       }
