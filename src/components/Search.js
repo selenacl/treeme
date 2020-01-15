@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from "react";
 
 import '../sass/App.scss';
 import '../sass/Search.scss';
@@ -8,22 +8,27 @@ import IconButton from '@material-ui/core/IconButton';
 import InputAdornment from '@material-ui/core/InputAdornment';
 import SearchIcon from '@material-ui/icons/Search';
 
-function Search() {
+function Search(props) {
+
   return (
-    <TextField
+    <form onSubmit={(e, searchInput) => props.submit(e, searchInput)}>
+      <TextField
           label="Search"
           id="outlined-margin-none"
           placeholder="Search for a tree"
           variant="outlined"
+          value={props.searchInput}
+          onChange={props.onChange}
           InputProps={{
             endAdornment:
             <InputAdornment position="end">
-                <IconButton>
+                <IconButton type="submit">
                     <SearchIcon/>
                 </IconButton>
             </InputAdornment>
         }}
     />
+    </form>
   );
 }
 

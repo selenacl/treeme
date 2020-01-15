@@ -8,7 +8,7 @@ function Pagination({cardsPerPage, totalCards, paginate}) {
     for(let i = 1; i <= Math.ceil(totalCards / cardsPerPage); i++) {
         pageNumbers.push(i);
     }
-console.log(pageNumbers)
+
   return (
     <div>
         <ul className="pagination">
