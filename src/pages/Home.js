@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 import '../sass/App.scss';
 import '../sass/Home.scss';
@@ -17,16 +18,20 @@ function Home() {
   const [currentPage, setCurrentPage] = useState(1);
   const [cardsPerPage] = useState(8);
 
-  const allCards = treeInfo.map((tree, index) => {
-                        return <Grid item xs={12} md={6} lg={3}>
-                                <HomeCard 
-                                  name={tree.name}
-                                  scientificName={tree.scientificName}
-                                  filename={tree.images[0].filename}
-                                  tags={tree.tags} 
-                                  key={index} />
-                              </Grid>
-                      });
+  const allCards = 
+    treeInfo.map((tree, index) => {
+      const path = tree.name.toLowerCase().split(' ').join('');
+      return <Grid item xs={12} md={6} lg={3}>
+                <Link to={"/tree/" + path} style={{ textDecoration: 'none' }}>
+                  <HomeCard 
+                    name={tree.name}
+                    scientificName={tree.scientificName}
+                    filename={tree.images[0].filename}
+                    tags={tree.tags} 
+                    key={index} />
+                  </Link>
+            </Grid>
+    });
 
   const [cards, setCards] = useState(allCards);
 
