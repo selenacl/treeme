@@ -28,13 +28,19 @@ function Footer() {
           </Link>
           </Typography>
           <IconButton>
-            <EmailIcon fontSize="small" />
+            <Link href="mailto:selenacl22@gmail.com" color="inherit">
+              <EmailIcon fontSize="small" />
+            </Link>
           </IconButton>
           <IconButton>
-            <GitHubIcon fontSize="small" />
+            <Link href="https://github.com/selenacl/" color="inherit">
+              <GitHubIcon fontSize="small" />
+            </Link>
           </IconButton>
           <IconButton>
-            <LinkedInIcon fontSize="small" />
+            <Link href="https://www.linkedin.com/in/selena-castrolopez-b4058b18b" color="inherit">
+              <LinkedInIcon fontSize="small" />
+            </Link>
           </IconButton>
         </Toolbar>
     </AppBar>
