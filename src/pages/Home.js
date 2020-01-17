@@ -21,7 +21,7 @@ function Home() {
   const allCards = 
     treeInfo.map((tree, index) => {
       const path = tree.name.toLowerCase().split(' ').join('');
-      return <Grid item xs={12} md={6} lg={3}>
+      return <Grid item xs={12} sm={6} lg={3}>
                 <Link 
                   to={{
                     pathname: `/tree/${path}`,
@@ -61,11 +61,14 @@ function Home() {
   const search = (searchInput) => {
     setSearchInput(searchInput.toLowerCase());
 
+    // if empty search
     if(!searchInput.length) {
       setCards(allCards);
+      setCurrentPage(1);
       return;
     }
 
+    // search
     let results = [];
     allCards.forEach((card) => {
       console.log(card)

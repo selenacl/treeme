@@ -6,6 +6,7 @@
 
 .MuiTypography-h1 {
     font-size: 4.5rem!important;
+    color: white;
 }
 
 .treePhotos {
@@ -16,12 +17,16 @@
         height: 30rem;
         width: 30rem;
         object-fit: cover;
-        padding-right: 20px;
+    }
+
+    &__leftbox {
+        padding-right: 10px;
     }
 
     &__rightbox {
         display: flex;
         flex-direction: column;
+        padding-left: 10px;
     }
 
     &__rightimg {
@@ -48,5 +53,193 @@
     &__title {
         font-weight: 300!important;
         font-size: 1.8rem!important;
+    }
+}
+
+@media only screen and (max-width: 1675px) {
+    .treePhotos {
+    
+        &__leftimg {
+            height: 26rem;
+            width: 26rem;
+        }
+    
+        &__leftbox {
+            padding-right: 8px;
+        }
+    
+        &__rightbox {
+            padding-left: 8px;
+        }
+    
+        &__rightimg {
+            height: calc(13rem - 8px);
+            width: 13rem;
+        }
+
+        &__rightimg:not(:last-child) {
+            padding-bottom: 16px!important;
+        }
+    }
+
+    .treeDetails {
+        height: 26rem;
+    }
+}
+
+@media only screen and (max-width: 1450px) {
+
+    .MuiTypography-h1 {
+        font-size: 3.5rem!important;
+    }
+
+    .MuiTypography-body2 {
+        font-size: .75rem!important;
+        overflow: auto;
+    }
+
+    .MuiChip-root {
+        font-size: .6rem!important;
+    }
+
+    .treePhotos {
+    
+        &__leftimg {
+            height: 22rem;
+            width: 22rem;
+        }
+    
+        &__rightimg {
+            height: calc(11rem - 8px);
+            width: 11rem;
+        }
+    }
+
+    .treeDetails {
+        height: 22rem;
+    }
+}
+
+@media only screen and (max-width: 1350px) { 
+    .treeDetails {
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+
+    .MuiTypography-h1 {
+        font-size: 3.5rem!important;
+    }
+
+    .MuiTypography-body2 {
+        font-size: .75rem!important;
+        overflow: auto;
+    }
+
+    .MuiChip-root {
+        font-size: .6rem!important;
+    }
+
+    .treePhotos {
+    
+        &__leftimg {
+            height: 18rem;
+            width: 18rem;
+        }
+    
+        &__rightimg {
+            height: calc(9rem - 8px);
+            width: 9rem;
+        }
+    }
+
+    .treeDetails {
+
+        &__title {
+            font-size: 1.5rem!important;
+        }
+    }
+}
+
+@media only screen and (max-width: 1050px) { 
+    .MuiTypography-h1 {
+        font-size: 2.5rem!important;
+    }
+
+    .treePhotos {
+    
+        &__leftimg {
+            height: 16rem;
+            width: 16rem;
+        }
+    
+        &__leftbox {
+            padding-right: 6px;
+        }
+    
+        &__rightbox {
+            padding-left: 6px;
+        }
+    
+        &__rightimg {
+            height: calc(8rem - 6px);
+            width: 8rem;
+        }
+
+        &__rightimg:not(:last-child) {
+            padding-bottom: 12px!important;
+        }
+    }
+}
+
+@media only screen and (max-width: 960px) {  
+    .treePhotos {
+        justify-content: center;
+    
+        &__leftimg {
+            height: 22rem;
+            width: 22rem;
+        }
+    
+        &__leftbox {
+            padding-right: 8px;
+        }
+    
+        &__rightbox {
+            padding-left: 8px;
+        }
+    
+        &__rightimg {
+            height: calc(11rem - 8px);
+            width: 11rem;
+        }
+    }
+
+    #treeH1 {
+        margin: 0 auto!important;
+    }
+}
+
+@media only screen and (max-width: 600px) {  
+    .treePhotos {
+    
+        &__leftimg {
+            height: 16rem;
+            width: 16rem;
+        }
+    
+        &__leftbox {
+            padding-right: 6px;
+        }
+    
+        &__rightbox {
+            padding-left: 6px;
+        }
+    
+        &__rightimg {
+            height: calc(8rem - 6px);
+            width: 8rem;
+        }
     }
 }

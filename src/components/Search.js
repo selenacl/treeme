@@ -15,14 +15,14 @@ function Search(props) {
       <TextField
           label="Search"
           id="outlined-margin-none"
-          placeholder="Search for a tree"
+          placeholder="Search for a tree by name"
           variant="outlined"
           value={props.searchInput}
           onChange={props.onChange}
           InputProps={{
             endAdornment:
             <InputAdornment position="end">
-                <IconButton type="submit">
+                <IconButton type="submit" id="searchIcon">
                     <SearchIcon/>
                 </IconButton>
             </InputAdornment>

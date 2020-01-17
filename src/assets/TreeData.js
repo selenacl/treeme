@@ -2,15 +2,14 @@ export default [
     {
         name: "Redwood",
         scientificName: "Sequoioideae",
-        locations: ["Northern California"],
-        aliases: "",
-        height: "",
-        width: "",
-        tags: ["redwood", "california"],
+        locations: ["Northern California", "China"],
+        aliases: ["None"],
+        height: "200-240ft",
+        tags: ["redwood", "california", "coniferous"],
         description: `The redwood species contains the largest and tallest trees in the world. These trees can
         live for thousands of years. This is an endangered subfamily due to habitat losses from fire ecology
         suppression, logging, and air pollution.`,
-        citations: ["https://en.wikipedia.org/wiki/Sequoioideae"],
+        citations: ["https://en.wikipedia.org/wiki/Sequoioideae", "https://www.bigsurcalifornia.org/redwoods.html"],
         images: [
             {
                 filename: "redwood-1.jpg",
@@ -33,10 +32,9 @@ export default [
         name: "Yellow Birch",
         scientificName: "Betula alleghaniensis",
         locations: ["Quebec, Canada"],
-        aliases: "",
-        height: "",
-        width: "",
-        tags: ["quebec", "canada"],
+        aliases: ["Golden Birch"],
+        height: "60-80ft",
+        tags: ["quebec", "canada", "deciduous"],
         description: `It is a medium-sized, typically single stemmed deciduous tree reaching 60-80 feet tall
         with a trunk typically 2-3 ft in diameter, making it the largest North American species of birch. Yellow
         birch is long-lived, typically 150 years and some old growth forest specimens may last for 300 years.`,
@@ -63,9 +61,8 @@ export default [
         name: "Pin Cherry",
         scientificName: "Prunus pensylvanica",
         locations: ["Southern Appalachians", "Great Smoky Mountains"],
-        aliases: "",
-        height: "",
-        width: "",
+        aliases: ["Fire Cherry", "Bird Cherry"],
+        height: "15-50ft",
         tags: ["appalachians", "smoky mountains"],
         description: `Grows as a shrub or small tree, usually with a straight trunk and a narrow, round-topped
         crown. It grows 5-15m tall and 10-51cm in diameter. Trees up to 30m tall have been found growing in
@@ -74,7 +71,7 @@ export default [
         by insects. As part of its reproductive strategy, pin cherries seeds can remain viable in the soil for
         many years. Seeds accumulate over prolonged periods, and soil seed banks may be viable for 50-100
         years.`,
-        citations: ["https://en.wikipedia.org/wiki/Prunus_pensylvanica"],
+        citations: ["https://en.wikipedia.org/wiki/Prunus_pensylvanica", "https://www.fs.fed.us/database/feis/plants/tree/prupen/all.html"],
         images: [
             {
                 filename: "pinCherry-1.jpg",
@@ -97,9 +94,8 @@ export default [
         name: "Elm",
         scientificName: "Ulmus",
         locations: ["Europe", "North America", "Australasia"],
-        aliases: "",
-        height: "",
-        width: "",
+        aliases: ["None"],
+        height: "50-70ft",
         tags: ["europe", "north america", "australasia"],
         description: `First appeared in the Miocene geological period about 20 million years ago, originating
         in what is now central Asia. These trees flourished and spread over most of the Northern Hemisphere,
@@ -128,15 +124,14 @@ export default [
         name: "Balsam fir",
         scientificName: "Abies balsamea",
         locations: ["Southernmost Quebec", "West Virginia"],
-        aliases: "",
-        height: "",
-        width: "",
+        aliases: ["Silver Pine", "Blister Fir"],
+        height: "46-66ft",
         tags: ["quebec", "west viginia"],
         description: `Balsam fir is a small to medium-sized evergreen tree typically 14-20 meters tall,
         occasionally reaching a height of 27m. Balsam firs tend to grow in cool climates, ideally with a mean
         annual temperature of 4 degrees Celsius, with consistent moisture at their roots. They typically grow in
         in forest types such as swamp, flat, hardwood slope, and mountain top.`,
-        citations: ["https://en.wikipedia.org/wiki/Abies_balsamea"],
+        citations: ["https://en.wikipedia.org/wiki/Abies_balsamea", "https://www.arborday.org/trees/treeguide/TreeDetail.cfm?ItemID=1105"],
         images: [
             {
                 filename: "balsamFir-1.jpg",
@@ -159,9 +154,8 @@ export default [
         name: "Eastern Hemlock",
         scientificName: "Tsuga Canadensis",
         locations: ["Eastern North America"],
-        aliases: "",
-        height: "",
-        width: "",
+        aliases: ["Canadian Hemlock"],
+        height: "102ft",
         tags: ["north america"],
         description: `The eastern hemlock grows well in shade and is very long lived, with the oldest recorded
         specimen, found in Tionesta, Pennsylvania, being at least 554 years old. The tree generally reaches
@@ -191,10 +185,9 @@ export default [
         name: "Bitternut Hickory",
         scientificName: "Carya cordiformis",
         locations: ["Eastern United States", "Southwestern New Hampshire", "Vermont", "Maine", "Southern Quebec"],
-        aliases: "",
-        height: "",
-        width: "",
-        tags: ["eastern united states", "quebec"],
+        aliases: ["Swamp Hickory"],
+        height: "115ft",
+        tags: ["eastern united states", "quebec", "deciduous"],
         description: `Bitternut hickory grows in moist mountain valleys along streambanks and in swamps.
         Although it is usually found on wet bottom lands it grows on dry sites and grows well on poor soils
         low in nutrients. It is a large deciduous tree, growing up to 35m tall, with a trunk up to 1m in diameter.`,
@@ -221,10 +214,9 @@ export default [
         name: "Shagbark Hickory",
         scientificName: "Carya ovata",
         locations: ["Eastern United States"],
-        aliases: "",
-        height: "",
-        width: "",
-        tags: ["eastern united states"],
+        aliases: ["None"],
+        height: "60-80ft",
+        tags: ["eastern united states", "deciduous", "nuts"],
         description: `A large deciduous tree, growing well over 30m tall, and can live more than 350 years.
         The nuts are edible with an excellent flavor and are a popular food among people and squirrels alike.
         They are unsuitable to commercial or orchard production due to the long time it takes for a tree to
@@ -252,9 +244,8 @@ export default [
         name: "Red Maple",
         scientificName: "Acer rubrum",
         locations: ["Eastern North America", "Central North America"],
-        aliases: "",
-        height: "",
-        width: "",
+        aliases: ["Morgan Maple"],
+        height: "40-70ft",
         tags: ["north america"],
         description: `One of the most common and widespread deciduous trees of eastern and central North
         America. The U.S. Forest service recognizes it as the most abundant native tree in eastern North
@@ -279,5 +270,37 @@ export default [
                 photographer: null
             }
         ]
+    },
+    {
+        name: "Pygmy Date Palm",
+        scientificName: "Phoenix roebelenii",
+        locations: ["Southeastern Asia"],
+        aliases: ["Miniature Date Palm", "Robellini"],
+        height: "40-70ft",
+        tags: ["asia", "palm"],
+        description: `Phoenix roebelenii is a small to medium-sized, slow-growing slender 
+        tree growing to 2–3 metres (6.6–9.8 ft) tall. The leaves are 
+        60–120 cm (24–47 in) long, pinnate, with around 100 leaflets 
+        arranged in a single plane (unlike the related P. loureiroi 
+            where the leaflets are in two planes).`,
+        citations: ["https://en.wikipedia.org/wiki/Phoenix_roebelenii"],
+        images: [
+            {
+                filename: "palm-1.jpg",
+                source: "https://www.monaconatureencyclopedia.com/phoenix-roebelenii/?lang=en",
+                photographer: "G. Mazza"
+            },
+            {
+                filename: "palm-2.jpg",
+                source: "https://www.gardenia.net/plant/phoenix-roebelenii",
+                photographer: null
+            },
+            {
+                filename: "palm-3.jpg",
+                source: "https://selectree.calpoly.edu/tree-detail/phoenix-roebelenii",
+                photographer: null
+            }
+        ]
     }
+
 ]

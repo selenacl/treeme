@@ -15,7 +15,9 @@ function Footer() {
   return (
     <AppBar position="static" className="footerAppBar">
         <Toolbar>
-          <Typography variant="overline" fontWeight="bold">TREE.ME</Typography>
+          <Link href="/" style={{color: "inherit"}}>
+            <Typography variant="overline" fontWeight="bold">TREE.ME</Typography>
+          </Link>
         </Toolbar>
         
         <Toolbar>

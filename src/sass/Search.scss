@@ -1,7 +1,17 @@
 @import "variables.scss";
 
+@media only screen and (max-width: 700px) {
+    .MuiOutlinedInput-root {
+        width: 100%!important;
+    }
+}
+
 .MuiOutlinedInput-root {
     width: 35rem;
+}
+
+input {
+    color: $color-white!important;
 }
 
 .MuiTextField-root {
@@ -9,5 +19,13 @@
 }
 
 .MuiOutlinedInput-notchedOutline {
-    border: 2px solid $color-primary-green!important;
+    border: 2px solid $color-white!important;
+}
+
+.MuiFormLabel-root {
+    color: $color-white!important;
+}
+
+#searchIcon .MuiIconButton-label .MuiSvgIcon-root {
+    fill: $color-white!important;
 }

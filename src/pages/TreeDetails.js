@@ -23,7 +23,7 @@ function TreeDetails(props) {
 
   return (
     <Container maxWidth="false" className="treeContainer">
-        <Typography inline variant="h1" align="left">{tree.name}</Typography>
+        <Typography inline variant="h1" id="treeH1">{tree.name}</Typography>
         <Grid
         container 
         spacing={10} 
@@ -32,7 +32,7 @@ function TreeDetails(props) {
         alignItems="center">
 
             <Grid item sm={12} md={6} className="treePhotos">
-                <Box>
+                <Box className="treePhotos__leftbox">
                     <img src={require ("../assets/" + tree.images[0].filename)} className="treePhotos__leftimg"/>
                 </Box>
                 <Box className="treePhotos__rightbox">
@@ -43,7 +43,7 @@ function TreeDetails(props) {
 
             <Grid item xs={12} md={6} className="treeDetails">
                 <Paper className="treeDetails__paper">
-                    <List style={{"height": "100%"}}>
+                    <List>
                         <ListItem>
                             <Typography variant="h5" className="treeDetails__title">{tree.name} Details</Typography>
                         </ListItem>
@@ -74,12 +74,12 @@ function TreeDetails(props) {
                         </ListItem>
                         <Divider />
                         
-                        <ListItem style={{position: "absolute", "bottom": 20, "left": 0}}>
+                        <ListItem style={{"height": "2rem!important"}}>
                             {chips}
                         </ListItem>
                     </List>
 
-                </Paper>
+                </Paper> 
             </Grid>
 
             
